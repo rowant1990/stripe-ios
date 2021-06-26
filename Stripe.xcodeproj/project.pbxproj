@@ -678,7 +678,6 @@
 		E69552D625CCDC0F00753FDA /* STPiDEALBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69552D525CCDC0F00753FDA /* STPiDEALBank.swift */; };
 		E69552EB25D1E4F000753FDA /* STPGenericInputPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69552EA25D1E4EF00753FDA /* STPGenericInputPickerField.swift */; };
 		E6B0F5592686C0BA00055EAF /* StripeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B0F5582686C0BA00055EAF /* StripeCore.framework */; };
-		E6B0F55A2686C0BA00055EAF /* StripeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6B0F5582686C0BA00055EAF /* StripeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6B8971F25FC4FD6002428E1 /* MockAnalyticsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B8971E25FC4FD6002428E1 /* MockAnalyticsClient.swift */; };
 		E6B8972525FC532B002428E1 /* Analytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B8972125FC5311002428E1 /* Analytic.swift */; };
 		F1122A7E1DFB84E000A8B1AF /* UINavigationBar+StripeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1122A7D1DFB84E000A8B1AF /* UINavigationBar+StripeTest.m */; };
@@ -721,17 +720,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E6B0F55B2686C0BA00055EAF /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E6B0F55A2686C0BA00055EAF /* StripeCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F15AC18F1DBA9CC10009EADE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2872,7 +2860,6 @@
 				04CDB43E1A5F2E1800B854EE /* Frameworks */,
 				04CDB43F1A5F2E1800B854EE /* Headers */,
 				04CDB4401A5F2E1800B854EE /* Resources */,
-				E6B0F55B2686C0BA00055EAF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
