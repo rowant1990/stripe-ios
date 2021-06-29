@@ -10,6 +10,7 @@ import XCTest
 
 @testable import Stripe
 
+// TODO(mludowise|MOBILESDK-291): Migrate to StripeCore
 final class URLEncoderTest: XCTestCase {
     func testStringByReplacingSnakeCaseWithCamelCase() {
         let camelCase = URLEncoder.stringByReplacingSnakeCase(withCamelCase: "test_1_2_34_test")

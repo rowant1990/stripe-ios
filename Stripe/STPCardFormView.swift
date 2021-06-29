@@ -7,6 +7,7 @@
 //
 
 import UIKit
+@_spi(STP) import StripeCore
 
 /**
  Options for configuring the display of an `STPCardFormView` instance.

@@ -6,6 +6,7 @@
 //
 @testable import Stripe
 
+// TODO(mludowise|MOBILESDK-291): Migrate to StripeCore
 class NSMutableURLRequest_StripeTest: XCTestCase {
     func testAddParametersToURL_noQuery() {
         var request: NSMutableURLRequest?
