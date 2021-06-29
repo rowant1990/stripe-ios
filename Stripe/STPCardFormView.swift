@@ -564,6 +564,6 @@ extension STPCardFormView {
 }
 
 /// :nodoc:
-extension STPCardFormView: STPAnalyticsProtocol {
-    static var stp_analyticsIdentifier: String = "STPCardFormView"
+@_spi(STP) extension STPCardFormView: STPAnalyticsProtocol {
+    @_spi(STP) public static var stp_analyticsIdentifier: String = "STPCardFormView"
 }

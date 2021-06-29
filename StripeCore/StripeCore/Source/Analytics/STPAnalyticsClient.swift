@@ -9,20 +9,12 @@
 import Foundation
 import UIKit
 
-/**
- An SPI-public protocol to conform to for analytics logging.
- Swift doesn't allow public classes to conform to SPI public protocols.
- Because of this, each Stripe module should wrap this protocol in its
- own`STPAnalyticsProtocol` and use that instead.
- See `STPAnalyticsProtocol.swift` inside the `Stripe` module for an example.
- */
-@_spi(STP) public protocol STPAnalyticsProtocolInternal {
-    // Identifier to use for analytics logging.
-    static var stp_analyticsIdentifierInternal: String { get }
+@_spi(STP) public protocol STPAnalyticsProtocol {
+    static var stp_analyticsIdentifier: String { get }
 }
 
 @_spi(STP) public protocol STPAnalyticsClientProtocol {
-    func addClass<T: STPAnalyticsProtocolInternal>(toProductUsageIfNecessary klass: T.Type)
+    func addClass<T: STPAnalyticsProtocol>(toProductUsageIfNecessary klass: T.Type)
     func log(analytic: Analytic)
 }
 
@@ -49,9 +41,9 @@ import UIKit
         }
     }
 
-    public func addClass<T: STPAnalyticsProtocolInternal>(toProductUsageIfNecessary klass: T.Type) {
+    public func addClass<T: STPAnalyticsProtocol>(toProductUsageIfNecessary klass: T.Type) {
         objc_sync_enter(self)
-        _ = productUsage.insert(klass.stp_analyticsIdentifierInternal)
+        _ = productUsage.insert(klass.stp_analyticsIdentifier)
         objc_sync_exit(self)
     }
 
