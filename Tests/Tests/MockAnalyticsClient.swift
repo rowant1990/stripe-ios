@@ -6,6 +6,7 @@
 //  Copyright © 2021 Stripe, Inc. All rights reserved.
 //
 
+@_spi(STP) import StripeCore
 @testable import Stripe
 
 final class MockAnalyticsClient: STPAnalyticsClientProtocol {
