@@ -9,6 +9,7 @@
 @_spi(STP) import StripeCore
 @testable import Stripe
 
+// TODO(mludowise|MOBILESDK-291): Migrate to StripeCore
 final class MockAnalyticsClient: STPAnalyticsClientProtocol {
 
     private(set) var productUsage: Set<String> = []

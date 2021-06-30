@@ -1,6 +1,6 @@
 //
 //  URLEncoder.swift
-//  Stripe
+//  StripeCore
 //
 //  Created by Mel Ludowise on 5/26/21.
 //
