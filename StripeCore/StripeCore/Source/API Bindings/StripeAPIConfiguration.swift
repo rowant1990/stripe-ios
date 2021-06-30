@@ -2,7 +2,8 @@
 //  StripeAPIConfiguration.swift
 //  StripeCore
 //
-//  Created by Mel Ludowise on 6/22/21.
+//  Created by Mel Ludowise on 5/17/21.
+//  Copyright © 2021 Stripe, Inc. All rights reserved.
 //
 
 import Foundation
