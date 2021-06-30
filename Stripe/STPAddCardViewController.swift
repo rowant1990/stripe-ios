@@ -858,5 +858,6 @@ enum STPPaymentCardSection: Int {
 }
 
 @_spi(STP) extension STPAddCardViewController: STPAnalyticsProtocol {
-    @_spi(STP) public static var stp_analyticsIdentifier = "STPAddCardViewController"
+    /// :nodoc:
+    @_spi(STP) public static let stp_analyticsIdentifier = "STPAddCardViewController"
 }
