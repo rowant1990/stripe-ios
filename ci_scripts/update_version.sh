@@ -23,7 +23,7 @@ EOF
 echo "Successfully updated 'Version.xcconfig'"
 
 # Generate StripeAPIConfiguration+Version.swift
-cat > "${script_dir}/../StripeCore/StripeCore/Source/API Bindings/StripeAPIConfiguration+Version.swift"
+cat > "${script_dir}/../StripeCore/StripeCore/Source/API Bindings/StripeAPIConfiguration+Version.swift"  <<EOF
 //
 // StripeAPIConfiguration+Version.swift
 //
