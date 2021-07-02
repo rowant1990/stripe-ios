@@ -2075,7 +2075,6 @@ open class STPPaymentCardTextField: UIControl, UIKeyInput, STPFormTextFieldDeleg
 
 private let kCardLoadingAnimationDelay: TimeInterval = 0.1
 
-@_spi(STP) extension STPPaymentCardTextField: STPAnalyticsProtocol {
-    /// :nodoc:
-    @_spi(STP) public static var stp_analyticsIdentifier = "STPPaymentCardTextField"
+extension STPPaymentCardTextField: STPAnalyticsProtocol {
+    static var stp_analyticsIdentifier = "STPPaymentCardTextField"
 }

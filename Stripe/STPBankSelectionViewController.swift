@@ -253,7 +253,6 @@ public class STPBankSelectionViewController: STPCoreTableViewController, UITable
 
 private let STPBankSelectionCellReuseIdentifier = "STPBankSelectionCellReuseIdentifier"
 
-@_spi(STP) extension STPBankSelectionViewController: STPAnalyticsProtocol {
-    /// :nodoc:
-    @_spi(STP) public static var stp_analyticsIdentifier = "STPBankSelectionViewController"
+extension STPBankSelectionViewController: STPAnalyticsProtocol {
+    static var stp_analyticsIdentifier = "STPBankSelectionViewController"
 }

@@ -1137,7 +1137,6 @@ enum STPPaymentContextState: Int {
 
 private var kSTPPaymentCoordinatorAssociatedObjectKey = 0
 
-@_spi(STP) extension STPPaymentContext: STPAnalyticsProtocol {
-    /// :nodoc:
-    @_spi(STP) public static var stp_analyticsIdentifier = "STPPaymentContext"
+extension STPPaymentContext: STPAnalyticsProtocol {
+    static var stp_analyticsIdentifier = "STPPaymentContext"
 }

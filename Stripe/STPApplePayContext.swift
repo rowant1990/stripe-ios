@@ -513,8 +513,8 @@ import PassKit
 
 @available(iOSApplicationExtension, unavailable)
 @available(macCatalystApplicationExtension, unavailable)
-@_spi(STP) extension STPApplePayContext: STPAnalyticsProtocol {
-    @_spi(STP) public static var stp_analyticsIdentifier: String {
+extension STPApplePayContext: STPAnalyticsProtocol {
+    static var stp_analyticsIdentifier: String {
         return "STPApplePayContext"
     }
 }
