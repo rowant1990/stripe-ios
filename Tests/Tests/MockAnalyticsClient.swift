@@ -15,8 +15,8 @@ final class MockAnalyticsClient: STPAnalyticsClientProtocol {
     private(set) var productUsage: Set<String> = []
     private(set) var loggedAnalytics: [Analytic] = []
 
-    func addClass<T>(toProductUsageIfNecessary klass: T.Type) where T : STPAnalyticsProtocol {
-        productUsage.insert(klass.stp_analyticsIdentifier)
+    func addClass<T>(toProductUsageIfNecessary klass: T.Type) where T : STPAnalyticsProtocolSPI {
+        productUsage.insert(klass.stp_analyticsIdentifierSPI)
     }
 
     func log(analytic: Analytic) {
