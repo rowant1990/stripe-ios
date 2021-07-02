@@ -27,7 +27,7 @@
 		E69D642826855B9B0090B43D /* Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E69D641E26855B9B0090B43D /* Project-Debug.xcconfig */; };
 		E69D642926855B9B0090B43D /* StripeiOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E69D641F26855B9B0090B43D /* StripeiOS-Release.xcconfig */; };
 		E6E38EE8268BE48300233B24 /* StripeAPIConfiguration+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E38EE7268BE48300233B24 /* StripeAPIConfiguration+Version.swift */; };
-		E6E38EEA268BE69F00233B24 /* PublishableKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E38EE9268BE69F00233B24 /* PublishableKeyProvider.swift */; };
+		E6E38EEA268BE69F00233B24 /* PublishableKeyProviderSPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E38EE9268BE69F00233B24 /* PublishableKeyProviderSPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		E69D641E26855B9B0090B43D /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		E69D641F26855B9B0090B43D /* StripeiOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeiOS-Release.xcconfig"; sourceTree = "<group>"; };
 		E6E38EE7268BE48300233B24 /* StripeAPIConfiguration+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StripeAPIConfiguration+Version.swift"; sourceTree = "<group>"; };
-		E6E38EE9268BE69F00233B24 /* PublishableKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishableKeyProvider.swift; sourceTree = "<group>"; };
+		E6E38EE9268BE69F00233B24 /* PublishableKeyProviderSPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishableKeyProviderSPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 			children = (
 				E614AC96268BE14B00C59B3D /* StripeAPIConfiguration.swift */,
 				E6E38EE7268BE48300233B24 /* StripeAPIConfiguration+Version.swift */,
-				E6E38EE9268BE69F00233B24 /* PublishableKeyProvider.swift */,
+				E6E38EE9268BE69F00233B24 /* PublishableKeyProviderSPI.swift */,
 			);
 			path = "API Bindings";
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			files = (
 				E614ACA5268BE14B00C59B3D /* NSMutableURLRequest+Stripe.swift in Sources */,
 				E6E38EE8268BE48300233B24 /* StripeAPIConfiguration+Version.swift in Sources */,
-				E6E38EEA268BE69F00233B24 /* PublishableKeyProvider.swift in Sources */,
+				E6E38EEA268BE69F00233B24 /* PublishableKeyProviderSPI.swift in Sources */,
 				E614ACA0268BE14B00C59B3D /* StripeAPIConfiguration.swift in Sources */,
 				E614ACA3268BE14B00C59B3D /* STPAnalyticsClient.swift in Sources */,
 				E614ACA6268BE14B00C59B3D /* URLEncoder.swift in Sources */,

@@ -14,16 +14,17 @@ import Foundation
 
  - Note:
  NOTE(mludowise): This abstraction is necessary to avoid displaying
- `STPAnalyticsProtocol` conformance in our jazzy docs. If jazzy ever allows for
- ignoring spi-attributed extensions in docs generation, it can be removed.
+ `STPAnalyticsProtocol` conformance in our jazzy docs.
+ If Jazzy ever provides the ability to ignore SPI-public protocol conformance,
+ this should be removed.
  */
-protocol STPAnalyticsProtocol: STPAnalyticsProtocolInternal {
+protocol STPAnalyticsProtocol: STPAnalyticsProtocolSPI {
     static var stp_analyticsIdentifier: String { get }
 }
 
 extension STPAnalyticsProtocol {
     /// :nodoc:
-    @_spi(STP) public static var stp_analyticsIdentifierInternal: String {
+    @_spi(STP) public static var stp_analyticsIdentifierSPI: String {
         return stp_analyticsIdentifier
     }
 }
