@@ -863,11 +863,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PaymentSheet</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">PaymentSheet</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/PaymentSheet.swift#L32-L153">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/PaymentSheet.swift#L33-L154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -894,11 +895,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">STPAPIClient</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPAPIClient</span><span class="p">:</span> <span class="kt">PublishableKeyProvider</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPAPIClient.swift#L18-L251">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPAPIClient.swift#L19-L255">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -960,11 +962,12 @@ For additional customization options - seealso: STPFormTextFieldContainer</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">STPAddCardViewController</span><span class="p">:</span> <span class="kt"><a href="Classes/STPCoreTableViewController.html">STPCoreTableViewController</a></span><span class="p">,</span> <span class="kt">STPAddressViewModelDelegate</span><span class="p">,</span>
     <span class="kt">STPCardScannerDelegate</span><span class="p">,</span> <span class="kt"><a href="Protocols/STPPaymentCardTextFieldDelegate.html">STPPaymentCardTextFieldDelegate</a></span><span class="p">,</span> <span class="kt">UITableViewDelegate</span><span class="p">,</span>
     <span class="kt">UITableViewDataSource</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPAddCardViewController</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPAddCardViewController.swift#L12-L795">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPAddCardViewController.swift#L13-L796">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1083,11 +1086,12 @@ Usage looks like this:</p>
 <span class="kd">@available(macCatalystApplicationExtension, unavailable)</span>
 <span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="kt">STPApplePayContext</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">PKPaymentAuthorizationControllerDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPApplePayContext</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPApplePayContext.swift#L78-L511">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPApplePayContext.swift#L79-L512">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1229,11 +1233,12 @@ or inspect to obtain details about the selected bank.</p>
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">STPBankSelectionViewController</span><span class="p">:</span> <span class="kt"><a href="Classes/STPCoreTableViewController.html">STPCoreTableViewController</a></span><span class="p">,</span> <span class="kt">UITableViewDataSource</span><span class="p">,</span>
     <span class="kt">UITableViewDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPBankSelectionViewController</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPBankSelectionViewController.swift#L23-L235">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPBankSelectionViewController.swift#L24-L236">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1336,7 +1341,7 @@ is displayed when invalid input is detected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPCardFormView.swift#L50-L441">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPCardFormView.swift#L51-L442">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1407,7 +1412,7 @@ see <a href="https://stripe.com/docs/testing">https://stripe.com/docs/testing</a
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPCardValidator.swift#L31-L403">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPCardValidator.swift#L32-L404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1439,7 +1444,7 @@ see <a href="https://stripe.com/docs/testing">https://stripe.com/docs/testing</a
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPConfirmAlipayOptions.swift#L12-L40">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPConfirmAlipayOptions.swift#L13-L41">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2069,11 +2074,12 @@ new ephemeral key for the Customer object associated with the new user.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">STPCustomerContext</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/STPBackendAPIAdapter.html">STPBackendAPIAdapter</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPCustomerContext</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPCustomerContext.swift#L17-L386">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPCustomerContext.swift#L18-L387">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2117,7 +2123,7 @@ new ephemeral key for the Customer object associated with the new user.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPError.swift#L32-L56">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPError.swift#L33-L57">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2706,11 +2712,12 @@ anywhere a UITextField would be appropriate.</p>
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@IBDesignable</span>
 <span class="kd">open</span> <span class="kd">class</span> <span class="kt">STPPaymentCardTextField</span> <span class="p">:</span> <span class="kt">UIControl</span><span class="p">,</span> <span class="kt">UIKeyInput</span><span class="p">,</span> <span class="kt">STPFormTextFieldDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPPaymentCardTextField</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentCardTextField.swift#L17-L2019">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentCardTextField.swift#L18-L2020">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2746,7 +2753,7 @@ is specific to a single particular payment instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentConfiguration.swift#L17-L238">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentConfiguration.swift#L18-L239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2776,11 +2783,12 @@ is specific to a single particular payment instance.</p>
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">STPPaymentContext</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/STPAuthenticationContext.html">STPAuthenticationContext</a></span><span class="p">,</span>
     <span class="kt"><a href="Protocols/STPPaymentOptionsViewControllerDelegate.html">STPPaymentOptionsViewControllerDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/STPShippingAddressViewControllerDelegate.html">STPShippingAddressViewControllerDelegate</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPPaymentContext</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentContext.swift#L16-L1065">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentContext.swift#L17-L1066">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2819,7 +2827,7 @@ It can present authentication UI on top of your app or redirect users out of you
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentHandler.swift#L90-L1571">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentHandler.swift#L91-L1572">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4833,11 +4841,12 @@ or <code>pushPaymentOptionsViewController</code> on it.</p>
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">STPPaymentOptionsViewController</span><span class="p">:</span> <span class="kt"><a href="Classes/STPCoreViewController.html">STPCoreViewController</a></span><span class="p">,</span>
     <span class="kt">STPPaymentOptionsInternalViewControllerDelegate</span><span class="p">,</span> <span class="kt"><a href="Protocols/STPAddCardViewControllerDelegate.html">STPAddCardViewControllerDelegate</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPPaymentOptionsViewController</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentOptionsViewController.swift#L20-L517">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPPaymentOptionsViewController.swift#L21-L518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5205,11 +5214,12 @@ Instead of passing this to <code><a href="Classes/STPAPIClient.html#/c:@CM@Strip
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">STPShippingAddressViewController</span><span class="p">:</span>
     <span class="kt">STPAddressViewModelDelegate</span><span class="p">,</span> <span class="kt">UITableViewDelegate</span><span class="p">,</span> <span class="kt">UITableViewDataSource</span><span class="p">,</span>
     <span class="kt">STPShippingMethodsViewControllerDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">@_spi(STP)</span> <span class="kd">extension</span> <span class="kt">STPShippingAddressViewController</span><span class="p">:</span> <span class="kt">STPAnalyticsProtocol</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPShippingAddressViewController.swift#L13-L452">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPShippingAddressViewController.swift#L14-L453">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5370,7 +5380,7 @@ dictionary for card sources.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPSourceParams.swift#L13-L72">Show on GitHub</a>
+                        <a href="https://github.com/stripe/stripe-ios/tree/21.7.0/Stripe/STPSourceParams.swift#L14-L73">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5925,7 +5935,7 @@ this information whenever possible.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://stripe.com" target="_blank" rel="external">Stripe</a>. All rights reserved. (Last updated: 2021-07-07)</p>
+      <p>&copy; 2021 <a class="link" href="https://stripe.com" target="_blank" rel="external">Stripe</a>. All rights reserved. (Last updated: 2021-07-09)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
