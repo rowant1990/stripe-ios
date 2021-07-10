@@ -565,6 +565,7 @@ public class STPPaymentOptionsViewController: STPCoreViewController,
     )
 }
 
-extension STPPaymentOptionsViewController: STPAnalyticsProtocol {
-    static var stp_analyticsIdentifier = "STPPaymentOptionsViewController"
+@_spi(STP) extension STPPaymentOptionsViewController: STPAnalyticsProtocol {
+    /// :nodoc:
+    @_spi(STP) public static var stp_analyticsIdentifier = "STPPaymentOptionsViewController"
 }

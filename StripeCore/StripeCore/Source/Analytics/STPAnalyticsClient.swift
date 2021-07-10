@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-@_spi(STP) public protocol STPAnalyticsProtocolInternal {
-    static var stp_analyticsIdentifierInternal: String { get }
+@_spi(STP) public protocol STPAnalyticsProtocol {
+    static var stp_analyticsIdentifier: String { get }
 }
 
 @_spi(STP) public protocol STPAnalyticsClientProtocol {
-    func addClass<T: STPAnalyticsProtocolInternal>(toProductUsageIfNecessary klass: T.Type)
+    func addClass<T: STPAnalyticsProtocol>(toProductUsageIfNecessary klass: T.Type)
     func log(analytic: Analytic)
 }
 
@@ -41,9 +41,9 @@ import UIKit
         }
     }
 
-    public func addClass<T: STPAnalyticsProtocolInternal>(toProductUsageIfNecessary klass: T.Type) {
+    public func addClass<T: STPAnalyticsProtocol>(toProductUsageIfNecessary klass: T.Type) {
         objc_sync_enter(self)
-        _ = productUsage.insert(klass.stp_analyticsIdentifierInternal)
+        _ = productUsage.insert(klass.stp_analyticsIdentifier)
         objc_sync_exit(self)
     }
 
