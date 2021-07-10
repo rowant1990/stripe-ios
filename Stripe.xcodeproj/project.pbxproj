@@ -677,7 +677,6 @@
 		E620F1D8265F5FA200233581 /* PaymentAnalyticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F1D7265F5FA200233581 /* PaymentAnalyticTest.swift */; };
 		E640A4BF265F269800B31E91 /* STPAnalyticsClient+Payments.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640A4BE265F269800B31E91 /* STPAnalyticsClient+Payments.swift */; };
 		E640A4C1265F26A500B31E91 /* Analytic+Payments.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640A4C0265F26A500B31E91 /* Analytic+Payments.swift */; };
-		E6946080268E94E70099AC0F /* PublishableKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E694607F268E94E70099AC0F /* PublishableKeyProvider.swift */; };
 		E69552D625CCDC0F00753FDA /* STPiDEALBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69552D525CCDC0F00753FDA /* STPiDEALBank.swift */; };
 		E69552EB25D1E4F000753FDA /* STPGenericInputPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69552EA25D1E4EF00753FDA /* STPGenericInputPickerField.swift */; };
 		E6A73629268E7919004655BF /* STPAnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A73628268E7919004655BF /* STPAnalyticsProtocol.swift */; };
@@ -1446,7 +1445,6 @@
 		E630ABD32652F4B300C7AA5D /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		E640A4BE265F269800B31E91 /* STPAnalyticsClient+Payments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "STPAnalyticsClient+Payments.swift"; sourceTree = "<group>"; };
 		E640A4C0265F26A500B31E91 /* Analytic+Payments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Analytic+Payments.swift"; sourceTree = "<group>"; };
-		E694607F268E94E70099AC0F /* PublishableKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishableKeyProvider.swift; sourceTree = "<group>"; };
 		E69552D525CCDC0F00753FDA /* STPiDEALBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPiDEALBank.swift; sourceTree = "<group>"; };
 		E69552EA25D1E4EF00753FDA /* STPGenericInputPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPGenericInputPickerField.swift; sourceTree = "<group>"; };
 		E6A73628268E7919004655BF /* STPAnalyticsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPAnalyticsProtocol.swift; sourceTree = "<group>"; };
@@ -1886,7 +1884,6 @@
 				317ABDF725117C9F00CC59EF /* STPPaymentMethodListDeserializer.swift */,
 				317ABD8325117C9800CC59EF /* STPPushProvisioningDetails.swift */,
 				317ABD5C25117C9600CC59EF /* STPSourcePoller.swift */,
-				E694607F268E94E70099AC0F /* PublishableKeyProvider.swift */,
 			);
 			name = "API Bindings";
 			sourceTree = "<group>";
@@ -3344,7 +3341,6 @@
 				31D4D6662512BCDC00809066 /* STPCardLoadingIndicator.swift in Sources */,
 				3111C33D2526C2A300207E32 /* STPPromise.swift in Sources */,
 				B67242F02524111A002E1AAF /* STPPaymentMethodEPS.swift in Sources */,
-				E6946080268E94E70099AC0F /* PublishableKeyProvider.swift in Sources */,
 				366ECD33254B4AFA0082868E /* STPCardCVCInputTextFieldFormatter.swift in Sources */,
 				3176C24A251A844900300ADE /* STPPaymentOptionTuple.swift in Sources */,
 				36DFC22F251BF920003AC264 /* STPConnectAccountParams.swift in Sources */,
